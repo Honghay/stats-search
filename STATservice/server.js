@@ -5,9 +5,9 @@ const jwt = require('jsonwebtoken');
 require('dotenv').config();
 
 const Stats = require('./stats.model');
-const Note = require(path.join(__dirname, '../../user&note/NOTEservice/note.model.js'));
-const Comment = require(path.join(__dirname, '../../comment&team/COMMENTservice/comment.model.js'));
-const User = require(path.join(__dirname, '../../user&note/USERservice/user.model')); // Adjusted Path
+const Note = require('./note.model.js');
+const Comment = require('./comment.model.js');
+const User = require('./user.model.js');
 
 const app = express();
 app.use(express.json());

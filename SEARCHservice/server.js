@@ -1,9 +1,6 @@
 const express = require('express');
-const path = require('path');
-
-const Note = require(path.join(__dirname, '../../user&note/NOTEservice/note.model.js'));
-const Comment = require(path.join(__dirname, '../../comment&team/COMMENTservice/comment.model.js'));
-
+const Note = require('./note.model.js');
+const Comment = require('./comment.model.js');
 const mongoose = require('./db');
 
 const app = express();
